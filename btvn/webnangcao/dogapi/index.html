@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breeds</title>
+    <style>
+        /* CSS để áp dụng hiệu ứng hover */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Danh sách các giống chó</h1>
+    <select id="breeds"></select>
+    <button id="getSubBreeds">Hiển thị giống loài phụ</button>
+    <ul id="subBreeds"></ul>
+    <img id="dogImage" src="" alt="Dog Image">
+
+    <script>
+        $(document).ready(function () {
+            const $breedsSelect = $("#breeds");
+            const $subBreedsList = $("#subBreeds");
+            const $dogImage = $("#dogImage");
+
+            // Lấy danh sách các giống chó từ API
+            $.get("https://dog.ceo/api/breeds/list/all", function (data) {
+                const breeds = data.message;
+
+                // Duyệt qua danh sách các giống chó và hiển thị trong dropdown
+                for (const breed in breeds) {
+                    if (breeds.hasOwnProperty(breed)) {
+                        $breedsSelect.append(`<option value="${breed}">${breed}</option>`);
+                    }
+                }
+            });
+
+            // Xử lý sự kiện khi nhấn nút "Hiển thị giống loài phụ"
+            $("#getSubBreeds").click(function () {
+                const selectedBreed = $breedsSelect.val();
+                $subBreedsList.empty(); // Xóa danh sách giống loài phụ cũ
+
+                // Lấy danh sách giống loài phụ từ API
+                $.get(`https://dog.ceo/api/breed/${selectedBreed}/list`, function (data) {
+                    const subBreeds = data.message;
+
+                    // Hiển thị danh sách giống loài phụ
+                    if (subBreeds.length === 0) {
+                        $subBreedsList.append("<li>Không có giống loài phụ</li>");
+                    } else {
+                        subBreeds.forEach(function (subBreed) {
+                            $subBreedsList.append(`<li>${subBreed}</li>`);
+                        });
+                    }
+                });
+            });
+
+            // Xử lý sự kiện khi người dùng chọn một giống loài phụ để hiển thị ảnh ngẫu nhiên
+            $subBreedsList.on("click", "li", function () {
+                const selectedSubBreed = $(this).text();
+
+                // Lấy và hiển thị ảnh ngẫu nhiên của giống loài phụ
+                $.get(`https://dog.ceo/api/breed/${$breedsSelect.val()}/${selectedSubBreed}/images/random`, function (data) {
+                    const imageUrl = data.message;
+                    $dogImage.attr("src", imageUrl);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

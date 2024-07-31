@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- font chữ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div style="margin: 0 auto;">
+    <!-- Header -->
+    <header class="header position-relative">
+      <!-- z-3 để đặt z-index là 3 -->
+      <div class="container position-relative z-3 bg-white py-2">
+        <div class="d-flex flex-nowrap align-items-center">
+          <div class="flex-grow-1">
+            <a href="/" class="text-black">
+              <!-- mb-0 để loại bỏ margin-bottom -->
+              <h1 class="text_h1 mb-0 text-decoration-none text-black">Portfolio</h1>
+            </a>
+          </div>
+          <img src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5c6e7f27bf98b2b5a6f64eb6_menu-icon.png"
+            alt="Menu" class="btn-trigger-menu d-md-none" style="width: 22px; height: 18px;">
+          <nav class="desktop-nav d-none d-md-flex align-items-center gap-3">
+            <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">Home</a>
+            <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">About</a>
+            <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">Styleguide</a>
+          </nav>
+        </div>
+      </div>
+      <!-- phần cần giải thích: phải đổi thành d-lg-none -->
+      <nav
+        class="nav mobile-nav d-lg-none position-absolute top-100 start-0 end-0 bg-white d-flex flex-column align-items-center z-n1">
+        <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">Home</a>
+        <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">About</a>
+        <a href="" class="text-decoration-none text-black-50 text-uppercase p-1">Styleguide</a>
+      </nav>
+    </header>
+    <!-- Body -->
+    <!-- Section1 -->
+    <div class="section1 container d-flex flex-column justify-content-center text-center">
+      <div class="name-text">Jane Lo</div>
+      <div class="paragraph-light">Product Designer</div>
+      <div class="introduce">Hey there! I'm a creative graphic and web designer based in sunny San Francisco, CA.
+      </div>
+    </div>
+    <!-- Section2(phần 4 hình ảnh)-->
+    <div class=" ctn_section2 text-center my-5">
+      <div class="grid_section2">
+        <div class="section2">
+          <img
+            src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececb102f913e509144f_portfolio%201%20-%20wide.svg"
+            alt="">
+          <div class="section2_text">
+            <div class="section_project">Project 1</div>
+            <div class="paragraph-light">Graphic Design</div>
+          </div>
+        </div>
+        <div class="section2">
+          <img
+            src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececb102f96f5809144e_portfolio%202%20-%20wide.svg"
+            alt="">
+          <div class="section2_text">
+            <div class="section_project">Project 2</div>
+            <div class="paragraph-light">Web Design</div>
+          </div>
+        </div>
+        <div class="section2">
+          <img
+            src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececded4a04d627de84c_portfolio%204%20-%20wide.svg"
+            alt="">
+          <div class="section2_text">
+            <div class="section_project">Project 3</div>
+            <div class="paragraph-light">Web Design</div>
+          </div>
+        </div>
+        <div class="section2">
+          <img
+            src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5cdbececded4a0184e7de84b_portfolio%203%20-%20wide.svg"
+            alt="">
+          <div class="section2_text">
+            <div class="section_project">Project 4</div>
+            <div class="paragraph-light">Graphic Design</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Section3(phần kinh nghiệm) -->
+    <div class="carrer container d-flex flex-column justify-content-center text-center">
+      <h2>My experience</h2>
+      <p class="paragraph-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+        eros
+        elementum tristique.
+        Duis
+        cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+    </div>
+    <div class="section3 container d-flex flex-column justify-content-between text-center">
+      <div class="webflow">
+        <div class="name-text m-10">Webflow</div>
+        <div class="paragraph-light">Graphic Design</div>
+        <div class="paragraph-tiny">April 2014 - Mar 2015</div>
+      </div>
+      <div class="webflow">
+        <div class="name-text m-10">Webflow</div>
+        <div class="paragraph-light">Graphic Design</div>
+        <div class="paragraph-tiny">April 2015 - Mar 2016</div>
+      </div>
+      <div class="webflow">
+        <div class="name-text m-10">Webflow</div>
+        <div class="paragraph-light">Graphic Design</div>
+        <div class="paragraph-tiny">Jun 2016 - Jul 2017</div>
+      </div>
+      <div class="webflow">
+        <div class="name-text m-10">Webflow</div>
+        <div class="paragraph-light">Graphic Design</div>
+        <div class="paragraph-tiny">Aug 2017 - Mar forever</div>
+      </div>
+    </div>
+    <!-- Section4(contact) -->
+    <div class="section4">
+      <div class="contact container text-center">
+        <h3>
+          Want to get in touch?
+          <br>
+          Drop me a line!
+        </h3>
+        <p class="paragraph-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="container mt-5">
+        <form>
+          <div class="form-row mb-3">
+            <div class="mb-3">
+              <label for="name" class="form-label">NAME</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">EMAIL ADDRESS</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">MESSAGE</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-black wide">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer" class="d-flex flex-column justify-content-evenly align-items-center text-center">
+      <div class="icon_w_text d-flex align-items-center">
+        <img
+          src="https://assets.website-files.com/5c6e6f46bf98b2013cf621c5/5c6e7f3a02532373c1ddbad9_webflow-w-small%402x.png"
+          alt="" style="width: 15px; height: 10px; margin-right: 8px;">
+        <div class="paragraph-tiny">POWERED BY WEBFLOW</div>
+      </div>
+      <div class="footer-item">
+        <div class="footer-item1">FACEBOOK</div>
+        <div class="footer-item1">TWITTER</div>
+        <div class="footer-item1">INSTAGRAM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script>
+    // ngăn sự kiện click khi ấn vào dòng h1 (còn tại sao nó hiện ra thì không biết)
+    document.querySelector("h1").addEventListener("click", function (event) {
+      event.preventDefault();
+    });
+    // ấn vào menu xổ ra 3 thằng con
+    document
+      .querySelector(".btn-trigger-menu")
+      .addEventListener("click", function () {
+        console.log("đang click ra");
+        console.log(document.querySelector(".mobile-nav"));
+        document.querySelector(".mobile-nav").classList.toggle("show");
+      });
+  </script>
+</body>
+
+</html>

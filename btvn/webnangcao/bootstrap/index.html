@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Bootstrap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0auunaOJ1hi7pC9cPgA0BqV4FQVRS0fjeMZhLxrcmQ&s"
+        type="image/x-icon" />
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header" class="d-flex justify-content-between align-items-center">
+            <img class="logo" src="https://vuighe3.com/assets/img/logo_v8.png" alt="" />
+            <ul id="nav" class="d-flex justify-content-between list-unstyled p-0 mb-0">
+                <li class="rounded-pill px-3 py-1 border border-secondary text-center">Anime</li>
+                <li class="rounded-pill px-3 py-1 border border-secondary text-center">Movie</li>
+                <li class="rounded-pill px-3 py-1 border border-secondary text-center">English 1-1</li>
+                <li class="rounded-pill px-3 py-1 border border-secondary text-center">BXH</li>
+            </ul>
+            <div class="header-search border border-secondary d-flex align-items-center justify-content-end">
+                <!-- kính lúp -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </div>
+            <!-- bố của 3 nút bên phải -->
+            <div class="deobiet d-flex justify-content-end align-items-center">
+                <div class="deobiet1 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                </div>
+                <div class="deobiet1 d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                </div>
+                <!-- nút người(đăng nhập) -->
+                <button class="btn custom-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
+                    <div class="deobiet1 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+<div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Chào khách!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row">
+            <!-- Toggle Buttons -->
+            <div class="col-12 mb-3 d-flex justify-content-start">
+                <button id="loginBtn" class="btn btn-primary me-2 active" onclick="showLoginForm()">Đăng Nhập</button>
+                <button id="registerBtn" class="btn btn-outline-primary" onclick="showRegisterForm()">Đăng Ký</button>
+            </div>
+            <!-- Login Form -->
+            <div id="loginForm" class="col-12">
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Tên đăng nhập</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Mật Khẩu</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="" required>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                        </div>
+                        <a href="#" onclick="forgotPassword()" class="btn btn-link p-0">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
+                </form>
+                <div class="mt-3">
+                    <p>Hoặc đăng nhập bằng:</p>
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="loginWithFacebook()">Facebook</button>
+                    <button class="btn btn-outline-danger w-100" onclick="loginWithGoogle()">Google</button>
+                </div>
+            </div>
+            <!-- Register Form -->
+            <div id="registerForm" class="col-12" style="display: none;">
+                <form id="registerForm" onsubmit="handleRegister(event)">
+                    <div class="mb-3">
+                        <label for="registerUsername" class="form-label">Tên đăng nhập</label>
+                        <input type="text" class="form-control" id="registerUsername" placeholder="Tên đăng nhập"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Mật Khẩu</label>
+                        <input type="password" class="form-control" id="registerPassword" placeholder="Mật Khẩu"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Nhập lại mật khẩu</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Nhập lại mật khẩu"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="displayName" class="form-label">Tên hiển thị</label>
+                        <input type="text" class="form-control" id="displayName" placeholder="Tên hiển thị" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="registerEmail" placeholder="Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="genderCheck" required>
+                            <label class="form-check-label" for="genderCheck">Giới tính</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- bọc thân -->
+    <div class="bochet" style="background-color: rgb(30, 41, 59)">
+        <div id="wrapper">
+            <img src="https://s199.imacdn.com/vg/2024/04/08/bd4520e021eeab24_ef7e896825ca9c21_182979817125684103118684.jpg"
+                alt="" class="imgbig" />
+            <div class="bocads">
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2024/04/22/f72be5f01cf9c8eb_bd9fa1f2baf1029d_1514117137712898118684.jpg"
+                        alt="" class="imgads" />
+                    <span class="sale">-0%</span>
+                    <div class="shadow"></div>
+                    <p class="price">100,000đ - Thảo dược</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2024/04/22/c65050589b412702_e0495eb380ce6e2f_1716817137717406118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <p class="price">123,456đ - Lười</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2024/04/22/419069801200cae8_7c64eaa2e340ab31_1729717137710092118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <p class="price">456,4564đ - Lazy</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2024/04/22/f38f514577711132_1dbd12508d5c1f40_2627517137711593118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <span class="sale">-1%</span>
+                    <p class="price">10,000đ - Lừa đấy</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2024/04/22/b3c591d44381625b_efe6d650accfb431_2257117137707651118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <p class="price">100,000đ - Thảo dược</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2023/11/20/24abe63f651b26cb_59612c3fe3fa47a8_2369617004628137118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <span class="sale">-10%</span>
+                    <p class="price">100,000đ - Thảo dược</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2023/11/18/59ae4a0f1cefd0e1_06fe54176216a0af_1819617003136954118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <p class="price">100,000đ - Thảo dược</p>
+                </div>
+                <div class="ads">
+                    <img src="https://s199.imacdn.com/vg/2023/11/18/d058e4d42a256ec8_6133b6cb28348dd6_6886417002411423118684.jpg"
+                        alt="" class="imgads" />
+                    <div class="shadow"></div>
+                    <p class="price">100,000đ - Thảo dược</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container1">
+            <div class="row">
+                <div class="col-3">
+                    <div class="heading mt-4 text-danger fs-2 text-uppercase"
+                        style="font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; font-size: 25px; line-height: 37.5px; margin-bottom: 8px;">
+                        TẬP MỚI NHẤT
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-2 gy-2">
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="movie-card position-relative">
+                        <div class="movie-thumbnail">
+                            <img src="https://s199.imacdn.com/vg/2024/07/04/193629384a417a62_d0af319ab91aa2f2_9481617200816633118684.jpg"
+                                alt="">
+                        </div>
+                        <div class="movie-info position-absolute start-0 bottom-0 end-0 text-white px-2 pb-2 pt-5">
+                            <h3 class="movie-title fs-5 mb-1">Prince of Tenis</h3>
+                            <div class="movie-meta d-flex justify-content-between">
+                                <div class="movie-episode fs-7">Tap 189 - abcdabcdabcdacbd</div>
+                                <div class="movie-views fs-7">221 luot xem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

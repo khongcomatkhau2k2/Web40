@@ -1,0 +1,314 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+ #container {
+     height: 60px;
+     background-color: rgb(30, 41, 59);
+     margin: 0 auto;
+     padding: 0 80px;
+
+ }
+
+ #header {
+     width: 1316px;
+     position: fixed;
+     height: 60px;
+ }
+
+ #nav {
+     width: 350px;
+ }
+
+ li {
+     color: rgb(163, 156, 175);
+     list-style: none;
+     font-size: 0.875rem;
+     line-height: 1.25;
+ }
+
+ .logo {
+     height: 50px;
+     line-height: 24px;
+     width: 155px;
+     margin-left: -8px;
+ }
+
+ .header-search {
+     width: 320px;
+     height: 30px;
+     border-radius: 9999px;
+     margin-left: 150px;
+ }
+
+ .bi-search {
+     margin-right: 5px;
+     /* Đảm bảo biểu tượng không bị tràn */
+     fill: rgb(163, 156, 175);
+     /* Màu sắc của biểu tượng */
+ }
+
+ .deobiet {
+     width: 320px;
+     height: 60px;
+     color: #fff;
+     line-height: 60px;
+     gap: 10px;
+ }
+
+ .deobiet1 {
+     width: 40px;
+     height: 40px;
+     border-radius: 9999px;
+     background-color: rgb(51, 65, 85);
+ }
+
+ .deobiet1:hover {
+     cursor: pointer;
+ }
+
+
+
+ /* bắt đầu đoạn không cần bootstrap*/
+ .bochet {
+     background-color: rgb(30, 41, 59);
+     margin: 0 auto;
+     padding: 0 80px 80px 100px;
+     z-index: 50;
+ }
+
+ #wrapper {
+     position: relative;
+ }
+
+ .imgbig {
+     max-width: 100%;
+     height: 390px;
+ }
+
+ .bocads {
+     display: flex;
+     /*căn chia đều 8 hình ảnh ra giữa */
+     justify-content: space-between;
+     margin-top: 26px;
+ }
+
+ .ads {
+     position: relative;
+ }
+
+ .imgads {
+     width: 154px;
+     height: 154px;
+ }
+
+ .shadow {
+     position: absolute;
+     top: 114px;
+     height: 40px;
+     width: 154px;
+     color: #fff;
+     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+ }
+
+ .sale {
+     color: #fff;
+     text-align: center;
+     position: absolute;
+     top: 8px;
+     right: 8px;
+     width: 48px;
+     height: 48px;
+     line-height: 21px;
+     justify-content: center;
+     font-size: 14px;
+     font-family: Nunito, ui-sans-serif, system-ui, -apple-system,
+         BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+         sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+         Noto Color Emoji;
+     border-radius: 9999px;
+     background-color: rgba(220, 38, 38, 0.8);
+ }
+
+ .price {
+     position: absolute;
+     top: 129px;
+     left: 12px;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 21px;
+     color: #fff;
+ }
+
+ /* hết đoạn không cần bootstrap */
+
+
+ /* bat dau doan can bootstrap */
+ img {
+     max-width: 100%;
+ }
+
+ .fs-7 {
+     font-size: 0.8rem !important;
+ }
+
+ .movie-info {
+     background-color: none;
+ }
+
+ .movie-info:hover {
+     cursor: pointer;
+     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(22, 78, 99));
+ }
+
+ .btn-primary {}
+
+ .offcanvas {
+     z-index: 1000;
+ }
+
+
+
+ .offcanvas {
+     background-color: #334155;
+     color: #ffffff;
+
+ }
+
+
+ .offcanvas-header {
+     background-color: #334155;
+
+     color: #ffffff;
+
+     border-bottom: none;
+ 
+ }
+
+
+ .offcanvas-body {
+     background-color: #334155;
+    
+     color: #ffffff;
+
+ }
+
+
+ form {
+     background-color: #334155;
+
+     padding: 20px;
+     border-radius: 8px;
+     color: #ffffff;
+
+ }
+
+
+ .form-control {
+     background-color: #334155;
+
+     border: 1px solid #ffffff;
+     color: #ffffff;
+ }
+
+ .form-control::placeholder {
+     color: #94a3b8;
+
+ }
+
+
+ .form-label,
+ .form-check-label {
+     color: #ffffff;
+
+ }
+
+
+ .form-check-input {
+     background-color: #334155;
+     border: 1px solid #ffffff;
+ }
+
+ .form-check-input:checked {
+     background-color: #ffffff;
+     border-color: #ffffff;
+ }
+
+
+ .btn-primary,
+ .btn-outline-primary {
+     color: #ffffff;
+ }
+
+ .btn-primary {
+     background-color: #334155;
+
+     border: none;
+
+ }
+
+ .btn-outline-primary {
+     border: none;
+
+     color: #ffffff;
+ }
+
+ .btn-outline-primary:hover {
+     background-color: #ffffff;
+     color: #334155;
+ }
+
+ .btn-danger {
+     background-color: #dc3545;
+
+     border: none;
+
+ }
+
+ .btn-outline-danger {
+     border: none;
+
+     color: #ffffff;
+ }
+
+ .btn-outline-danger:hover {
+     background-color: #ffffff;
+     color: #dc3545;
+ }
+
+
+ a.btn-link {
+     color: #94a3b8;
+
+ }
+
+ a.btn-link:hover {
+     color: #ffffff;
+
+ }
+
+
+ #loginBtn,
+ #registerBtn {
+     background-color: #334155;
+
+     color: #ffffff;
+     border: none;
+
+ }
+
+ #loginBtn:hover,
+ #registerBtn:hover {
+     background-color: #ffffff;
+     color: #334155;
+ }
+
+ #loginBtn.active,
+ #registerBtn.active {
+     background-color: #1e293b;
+
+     color: #ffffff;
+ }

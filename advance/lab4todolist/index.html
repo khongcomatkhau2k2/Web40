@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <h1>TodoApp</h1>
+    <form class="todo-form">
+        <input placeholder="Nhập nội dung công việc" />
+        <button>Thêm</button>
+    </form>
+    <form class="todo-filter">
+        <span>
+            <!-- radio: chỉ chọn 1 và dạng chấm tròn -->
+            <input type="radio" id="all" value="all" name="filter" checked>
+            <label for="all">Tất cả</label>
+        </span>
+        <span>
+            <input type="radio" id="active" name="filter" value="active">
+            <label for="active">Chưa hoàn thành</label>
+        </span>
+        <span>
+            <input type="radio" id="completed" name="filter" value="completed">
+            <label for="completed">Đã hoàn thành</label>
+        </span>
+    </form>
+    <ul class="todo-list">
+        <li class="todo-item">
+            <input type="checkbox">
+            <span class="todo-content">Đi chơi</span>
+            <button class="todo-delete">Xóa</button>
+        </li>
+        <li class="todo-item completed">
+            <input type="checkbox">
+            <span class="todo-content">Đi xem phim</span>
+            <button class="todo-delete">Xóa</button>
+        </li>
+        <li class="todo-item completed">
+            <input type="checkbox">
+            <span class="todo-content">Đi ngủ</span>
+            <button class="todo-delete">Xóa</button>
+        </li>
+    </ul>
+    <div class="todo-meta">
+        <span>Còn <span class="todo-count">1</span> công việc cần làm</span>
+        <button>Xóa các công việc đã hoàn thành</button>
+    </div>
+</body>
+
+</html>

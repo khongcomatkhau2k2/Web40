@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "nguyenvana",
+      "birthday": "1/1/1111",
+      "email": "nta1572002@gmail.com",
+      "phone": "0123456789",
+      "id": 1
+    },
+    {
+      "name": "b",
+      "birthday": "3/4/3123",
+      "email": "nta1572002@gmail.com",
+      "phone": "003242342",
+      "id": 2
+    }
+  ]
+}

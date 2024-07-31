@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Enter something">
+        <button onclick="addItem()">Add</button>
+        <button onclick="toggleList(event)">Ẩn list</button>
+    </div>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+    <button onclick="addElementLi()" class="e1">Thêm 3 thẻ <code>&lt;li&gt;</code></button>
+    <button onclick="changeColor()" class="e2">Đổi màu thẻ <code>&lt;li&gt;</code>1</button>
+    <button onclick="changebgrColor()" class="e3">Đổi background <code>&lt;li&gt;</code>3</button>
+    <button onclick="removeLi()" class="e4">Xóa thẻ <code>&lt;li&gt;</code>4</button>
+    <button onclick="addLi()" class="e4">Them the li bat ki <code>&lt;li&gt;</code>4</button>
+    <button onclick="removeLastItem()" class="e4">Xóa thẻ <code>&lt;li&gt;</code>cuối cùng</button>
+
+
+
+
+</body>
+
+</html>
+
+
+<!-- Thêm 3 thẻ <li> có nội dung Item 8, Item 9, Item 10 vào cuối danh sách
+Sửa nội dung cho thẻ <li> 1 thành màu đỏ (color)
+Sửa background cho thẻ <li> 3 thành màu xanh (background-color)
+Remove thẻ <li> 4
+Thêm thẻ <li> mới thay thế cho thẻ <li> 4 bị xóa ở bước trước, thẻ <li> mới có nội dung bất kỳ
+Thêm 1 nút “add” + 1 ô input để nhập text. Mỗi khi bấm nút thêm 1 thẻ <li> có nội dung là nội dung trong ô input vào cuối danh sách
+Thêm 1 nút “remove”. Chức năng để xóa thẻ <li> cuối cùng của danh sách
+Thêm 1 nút “Hide” trên đầu của danh sách <ul>.
+Khi bấm vào “Hide” thì <ul> sẽ ẩn. Đồng thời label của nút “Hide” => “Show”
+Và ngược lại Khi bấm vào “Show” thì <ul> sẽ hiện. Đồng thời label của nút “Show” => “Hide” -->

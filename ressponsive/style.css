@@ -1,0 +1,463 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Phông chữ */
+  --text-font: Montserrat,
+    sans-serif;
+  --text-color: #1A1B1F
+}
+
+.nav {
+  transform: translateY(-100%);
+  transition: all 0.3s;
+}
+
+.nav.show {
+  transform: translateY(0);
+}
+
+.section1 {
+  min-width: 345.2px;
+  height: 312px;
+  margin-top: 100px;
+  margin-bottom: 140px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.name-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+
+}
+
+.paragraph-light {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.introduce {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 10px 0;
+}
+
+.section2 {
+  width: 345.2px;
+  height: 611px;
+
+}
+
+.section2>img {
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.section2_text {
+  margin-bottom: 60px;
+}
+
+.section_project {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+
+.carrer>h2 {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  margin: 10px 0;
+  font-size: 36px;
+}
+
+.section3 {
+  height: 638px;
+  margin-bottom: 140px;
+  margin-top: 40px;
+}
+
+/* đây là để margin 10px */
+.m-10 {
+  margin-bottom: 10px;
+}
+
+.paragraph-tiny {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.section4 {
+  margin: 0 15px;
+  background-color: #f4f4f4;
+  padding-bottom: 40px;
+}
+
+.contact {
+  padding: 30px 15px 0;
+}
+
+.contact>h3 {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-black.wide {
+  width: 100%;
+}
+
+.form-label {
+  font-size: 12px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.icon_w_text {
+  margin-bottom: 15px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item1 {
+  font-size: 12px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  margin: 10px 20px 10px 0;
+}
+
+/* Phần responsive */
+
+/* Khi độ phân giải từ 768px trở lên */
+@media (min-width: 768px) {
+  .btn-trigger-menu {
+    display: block !important;
+    /* Hiển thị nút hình ảnh khi độ phân giải từ 768px trở lên */
+  }
+
+  .nav.mobile-nav {
+    display: none;
+    /* Ẩn menu di động khi độ phân giải từ 768px trở lên */
+  }
+
+  .desktop-nav {
+    display: none !important;
+    /* Hiển thị menu desktop khi độ phân giải từ 768px trở lên */
+  }
+
+  .section1,
+  .carrer,
+  .contact>h3,
+  .contact>.paragraph-light {
+    text-align: left !important;
+    /* Căn chỉnh văn bản sang bên trái */
+  }
+
+  .introduce {
+    font-size: 56px;
+    line-height: 70px;
+    width: 708px;
+  }
+
+  .section2,
+  .carrer,
+  .section3 {
+    padding: 0 15px;
+    width: 100%;
+    /* Đặt chiều rộng tối đa để tránh phần tử vượt quá kích thước màn hình lớn hơn */
+    /* Để phần tử có thể điều chỉnh chiều rộng phù hợp với kích thước màn hình */
+  }
+
+  .section2>img {
+    width: 100%;
+    /* Đặt width của ảnh là 100% của phần tử chứa */
+  }
+
+  /* bổ sung thêm */
+  .carrer,
+  .section3 {
+    padding: 0;
+  }
+
+  .section3 {
+    height: 224px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .webflow {
+    flex: 1 1 calc(50% - 30px);
+    box-sizing: border-box;
+    height: 97px;
+    text-align: left;
+  }
+
+  .section4 {
+    padding: 30px 50px 40px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    /* Không cho các trường xuống dòng */
+  }
+
+  .form-row .form-control {
+    flex: 1;
+    /* Các trường sẽ chia đều không gian còn lại trong hàng */
+    min-width: 0;
+    /* Đảm bảo các trường không bị co lại quá mức */
+  }
+
+  .form-row .mb-3 {
+    flex: 1;
+    /* Các phần tử mb-3 sẽ chia đều không gian còn lại trong hàng */
+  }
+
+  /* CSS cho textarea trong form */
+  textarea.form-control {
+    height: 200px;
+    margin: 0 0 18px;
+    padding: 12px 20px 21px;
+  }
+
+  .btn-black.wide {
+    width: auto;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: var(--text-font);
+  }
+
+  #footer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .footer-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+/* hết 768px */
+
+
+/* bắt đầu 992px đổ lên */
+/* cần chỉnh cho:   */
+
+@media (min-width: 992px) {
+  .header>.container {
+    padding: 30px 50px !important;
+  }
+
+  .text_h1 {
+    font-size: 24px;
+  }
+
+  .btn-trigger-menu {
+    display: none !important;
+    /* Hiển thị nút hình ảnh khi độ phân giải từ 768px trở lên */
+  }
+
+  .nav.mobile-nav {
+    display: none;
+    /* Ẩn menu di động khi độ phân giải từ 768px trở lên */
+  }
+
+  .desktop-nav {
+    display: block !important;
+    /* Hiển thị menu desktop khi độ phân giải từ 768px trở lên */
+  }
+
+  .carrer,
+  .contact>h3,
+  .contact>.paragraph-light {
+    text-align: left !important;
+    /* Căn chỉnh văn bản sang bên trái */
+  }
+
+  .section1 {
+    width: 1140px;
+  }
+
+  .introduce {
+    font-size: 64px;
+    line-height: 70px;
+    width: 1140px;
+
+  }
+
+  /* phần chat gpt*/
+  .ctn_section2 {
+    max-width: 1416px;
+    margin: 0 auto;
+  }
+
+  .ctn_section2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .grid_section2 {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .section2 {
+    padding: 0 !important;
+  }
+
+  .grid_section2 .section2 {
+    box-sizing: border-box;
+  }
+
+  .grid_section2 .section2:nth-child(1),
+  .grid_section2 .section2:nth-child(4) {
+    flex: 0 0 61.93%;
+  }
+
+  .grid_section2 .section2:nth-child(2),
+  .grid_section2 .section2:nth-child(3) {
+    flex: 0 0 35.91%;
+  }
+
+  .section2 img {
+    width: 100%;
+    height: 460px;
+  }
+
+  /* hết chat gpt */
+  .carrer {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .carrer>h2,
+  .carrer>p {
+    width: 798px;
+  }
+
+  .section3 {
+    width: 1140px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .webflow {
+    flex: 1;
+    text-align: left;
+
+  }
+
+  .section4 {
+    padding: 0 80px;
+    margin: 0 30px !important;
+  }
+
+  .contact {
+    width: 1140px;
+    margin: 0 !important;
+  }
+
+  .mt-5 {
+    margin: 0;
+  }
+
+  .form-row {
+    width: 798px !important;
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    /* Không cho các trường xuống dòng */
+  }
+
+  .form-row .form-control {
+    flex: 1;
+    /* Các trường sẽ chia đều không gian còn lại trong hàng */
+    min-width: 0;
+    /* Đảm bảo các trường không bị co lại quá mức */
+  }
+
+  .form-row .mb-3 {
+    flex: 1;
+    /* Các phần tử mb-3 sẽ chia đều không gian còn lại trong hàng */
+  }
+
+  /* CSS cho textarea trong form */
+  textarea.form-control {
+    width: 798px !important;
+    height: 200px;
+    margin: 0 0 18px;
+    padding: 12px 20px 21px;
+  }
+
+  .btn-black.wide {
+    width: auto;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: var(--text-font);
+  }
+
+  #footer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .footer-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}

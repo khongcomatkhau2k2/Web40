@@ -1,0 +1,15 @@
+
+
+img {
+    max-width: 100%;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+.movie-info:hover {
+    --bs-gradient: linear-gradient(to top,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0))
+}

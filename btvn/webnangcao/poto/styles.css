@@ -1,0 +1,275 @@
+:root {
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
+  --container-size: 1072px;
+  --row-gutter-x: 24px;
+  --row-gutter-y: 24px;
+}
+
+.font-asap {
+  font-family: "Asap", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-incon {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-maven {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  min-width: 100vh;
+  background-color: var(--gray-200);
+  color: var(--gray-600);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.description {
+  text-align: center;
+}
+
+.info {
+  gap: 56px;
+  max-width: 680px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border: 2px solid var(--red);
+  padding: 2.36px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.avatar .icon {
+  position: absolute;
+  bottom: -3px;
+  right: -7px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.my-name {
+  color: var(--red);
+}
+
+.main-text {
+  gap: 8px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+}
+
+.content {
+  gap: 20px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.intro {
+  padding-block-start: 120px;
+  padding-block-end: 183px;
+  background-image: url(images/intro-bg.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.intro-content {
+  gap: 80px;
+}
+
+.tags {
+  gap: 16px;
+}
+
+.tag {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--gray-500);
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 999px;
+  background-color: var(--gray-300);
+}
+
+
+/* meo css */
+
+.meo {
+  margin-top: 72px 0 56px;
+}
+
+.meo_title {
+  font-family: Inconsolata;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #E3646E;
+}
+
+.meo_title_2 {
+  font-family: Asap;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.meu {
+  padding-top: 88px;
+}
+
+.meo_product {
+  width: calc((100% / 3) - 24px);
+  background-color: #292C34;
+  border-radius: 12px;
+  margin: 12px;
+}
+
+.meo_product img {
+  height: 180px;
+  display: block;
+  padding: 12px;
+  width: 100%;
+}
+
+
+.meo_container {
+  margin-top: 56px;
+  margin-bottom: 144px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meo_note {
+
+  padding: 8px 12px 17px;
+  gap: 8px;
+  opacity: 0px;
+}
+
+.meo_note span {
+  font-family: Maven Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+}
+
+.meo_note p {
+  font-family: Maven Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: left;
+  color: #C0C4CE;
+}
+
+
+/* meus css */
+
+.meus_product {
+  width: 280px;
+  height: 155px;
+  gap: 20px;
+  background-color: #0D0E11;
+  border-radius: 12px;
+  margin: 12px;
+  border: 2px solid;
+  border-color: #292C34;
+  margin-bottom: 120px;
+}
+
+.meus_product img {
+  margin: 20px;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+
+/* contato */
+.contato {
+
+  background-image: url(../portfolio/images/intro-bg.png)
+}
+
+.con_product {
+  margin-top: 48px;
+}
+
+.con_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  height: 68px;
+  padding: 20px;
+  gap: 12px;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: #292C34;
+  margin-bottom: 16px;
+}
+
+.con_img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 2.63px 0px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.con_img2 {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 2.63px 0px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.con_item p {
+  width: 288px;
+  margin: 0 12px;
+}
