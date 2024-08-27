@@ -14,11 +14,7 @@ video {
 } */
 
 /* Css cho màn tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Các quy tắc CSS cho màn hình tablet */
-}
+@media (min-width: 768px) and (max-width: 1023px) {}
 
 /* Css cho màn mobile */
-@media (max-width: 767px) {
-    /* Các quy tắc CSS cho màn hình mobile */
-}
+@media (max-width: 767px) {}

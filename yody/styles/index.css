@@ -24,11 +24,13 @@ body {
     justify-content: space-around;
 }
 
-.yody {
+/* logo MU(trang chủ) */
+.logo {
     margin-right: 32px;
 }
 
 #header ul {
+
     align-items: center;
     display: flex;
     /* margin: 0 ;Nếu dùng bootstrap thì viết */
@@ -38,6 +40,8 @@ body {
     list-style: none;
     color: var(--text-color1);
     padding: 0 12px;
+    font-size: 1rem;
+    color: #1c2430;
 
 }
 
@@ -191,6 +195,7 @@ body {
     width: 763px;
     display: flex;
     justify-content: center;
+    gap: 16px;
     margin: 12px auto;
 }
 
@@ -207,6 +212,8 @@ body {
 }
 
 .favorite2 {
+    color: var(--text-color2);
+    font-size: 1.125rem;
     padding: 0 30px;
     background-color: #fafafa;
     height: 50px;
