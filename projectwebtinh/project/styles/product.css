@@ -1,0 +1,34 @@
+.embla {
+  overflow: hidden;
+  position: relative;
+}
+.embla__container {
+  display: flex;
+}
+.main-carousel .embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 1;
+}
+.thumb-carousel .embla__container {
+  gap: 10px;
+}
+.thumb-carousel .embla__slide {
+  flex: 0 0 80px;
+  min-width: 0;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+.thumb-carousel .embla__slide.embla-thumbs__slide--selected {
+  border-color: green;
+  /* box-shadow: 0 0 0 2px green; */
+}
+.product-image {
+  aspect-ratio: 1;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

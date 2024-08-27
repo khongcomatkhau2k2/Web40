@@ -1,56 +1,49 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.querySelector(".carousel");
-  const carouselItems = document.querySelectorAll(".carousel-item");
-  let currentIndex = 0;
+function setupCategoryCarousel() {
+  const rootNode = document.querySelector(".embla");
+  const viewportNode = rootNode.querySelector(".embla__viewport");
 
-  function showNextItem() {
-    currentIndex = (currentIndex + 1) % carouselItems.length;
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
+  // Grab button nodes
+  const prevButtonNode = rootNode.querySelector(".embla__prev");
+  const nextButtonNode = rootNode.querySelector(".embla__next");
 
-  setInterval(showNextItem, 3000); // Change item every 3 seconds
-
-  const categoryButtons = document.querySelectorAll(".category-buttons button");
-  const productsContainer = document.querySelector(".products");
-
-  const allProducts = {
-    all: [
-      { name: "Product 1", category: "category1" },
-      { name: "Product 2", category: "category1" },
-      { name: "Product 3", category: "category2" },
-      { name: "Product 4", category: "category2" },
-      // Add more products
-    ],
-    category1: [
-      { name: "Product 1", category: "category1" },
-      { name: "Product 2", category: "category1" },
-      // Add more products
-    ],
-    category2: [
-      { name: "Product 3", category: "category2" },
-      { name: "Product 4", category: "category2" },
-      // Add more products
-    ],
-  };
-
-  function displayProducts(category) {
-    productsContainer.innerHTML = "";
-    allProducts[category].forEach((product) => {
-      const productDiv = document.createElement("div");
-      productDiv.classList.add("product-item");
-      productDiv.textContent = product.name;
-      productsContainer.appendChild(productDiv);
-    });
-  }
-
-  categoryButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      categoryButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
-      displayProducts(button.dataset.category);
-    });
+  const embla = EmblaCarousel(viewportNode, {
+    dragFree: true,
+    align: "start",
   });
 
-  // Display all products by default
-  displayProducts("all");
+  // Add click listeners
+  prevButtonNode.addEventListener("click", embla.scrollPrev, false);
+  nextButtonNode.addEventListener("click", embla.scrollNext, false);
+}
+
+function renderCategoryCarousel(categories) {
+  const $categories = $(".categories-carousel .embla__container");
+
+  categories.forEach((cat) =>
+    $(
+      [
+        `<div class="embla__slide">`,
+        `<div class="category-item">`,
+        `<a class="">${cat.name}</a>`,
+        `</div>`,
+        `</div>`,
+      ].join(""),
+    )
+      .click(() => loadProductsByCateogy(cat))
+      .appendTo($categories),
+  );
+}
+
+function loadProductsByCateogy(category) {
+  getProductsBySlug(category.slug).then(function (data) {
+    $(".selected-category").text(category.name);
+    renderProducts(".products-by-category", data.products);
+  });
+}
+
+$(async function () {
+  const categories = await getCategories();
+  renderCategoryCarousel(categories);
+  setupCategoryCarousel(categories);
+  loadProductsByCateogy(categories[0]);
 });

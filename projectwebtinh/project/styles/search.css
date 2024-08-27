@@ -1,0 +1,14 @@
+.product-list > * {
+  flex: 0 0 calc((100% - 16px) / 2);
+}
+
+@media (min-width: 768px) {
+  .product-list > * {
+    flex: 0 0 calc((100% - 48px) / 4);
+  }
+}
+
+#sort-by-price {
+  display: inline-block;
+  width: 200px;
+}

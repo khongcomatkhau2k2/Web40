@@ -23,7 +23,7 @@
         <div class="container-fluid container-lg">
           <a class="navbar-brand" href="index.html">My Shop</a>
           <a
-            class="btn bg-secondary position-relative text-white ms-auto me-3 d-lg-none"
+            class="btn bg-secondary position-relative text-white ms-auto me-3 d-lg-none btn-cart"
             href="shopping-cart.html"
           >
             <i class="bi bi-cart"></i>
@@ -92,7 +92,7 @@
             </form>
 
             <a
-              class="btn bg-secondary position-relative text-white ms-2 d-none d-lg-block"
+              class="btn bg-secondary position-relative text-white ms-2 d-none d-lg-block btn-cart"
               href="shopping-cart.html"
             >
               <i class="bi bi-cart"></i>
@@ -108,6 +108,50 @@
       </nav>
     </header>
 
+    <main class="shopping-cart">
+      <div class="container mt-5">
+        <h1 class="text-center mb-3">Giỏ hàng</h1>
+
+        <div
+          class="cart-empty d-none d-flex flex-column align-items-center bg-body-tertiary py-5"
+        >
+          <p>Your cart is empty!</p>
+          <a href="index.html" class="btn btn-primary">Continue shopping</a>
+        </div>
+
+        <div class="cart d-none">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="cart-items"></div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-bg-info">
+                <div class="card-body">
+                  <h5 class="card-title">Cart Summary</h5>
+                  <p class="card-text">
+                    Total price:
+                    <span
+                      class="total-price text-decoration-line-through"
+                    ></span>
+                  </p>
+                  <p class="cart-text">
+                    Discounted Price: <span class="total-discount-price"></span>
+                  </p>
+                  <p class="cart-text">
+                    Total items: <span class="total-items"></span>
+                  </p>
+
+                  <button type="button" class="btn btn-primary">
+                    Process to checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -116,5 +160,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/shopping-cart.js"></script>
   </body>
 </html>

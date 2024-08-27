@@ -1,5 +1,11 @@
+body {
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (min-width: 992px) {
   .header .dropdown-menu {
-    width: 420px;
+    width: 460px;
   }
 }

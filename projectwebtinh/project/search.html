@@ -15,6 +15,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/search.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -23,7 +24,7 @@
         <div class="container-fluid container-lg">
           <a class="navbar-brand" href="index.html">My Shop</a>
           <a
-            class="btn bg-secondary position-relative text-white ms-auto me-3 d-lg-none"
+            class="btn bg-secondary position-relative text-white ms-auto me-3 d-lg-none btn-cart"
             href="shopping-cart.html"
           >
             <i class="bi bi-cart"></i>
@@ -92,7 +93,7 @@
             </form>
 
             <a
-              class="btn bg-secondary position-relative text-white ms-2 d-none d-lg-block"
+              class="btn bg-secondary position-relative text-white ms-2 d-none d-lg-block btn-cart"
               href="shopping-cart.html"
             >
               <i class="bi bi-cart"></i>
@@ -108,6 +109,37 @@
       </nav>
     </header>
 
+    <main class="search">
+      <div class="container mt-5">
+        <h1>Kết quả tìm kiếm với từ khóa: <span class="query"></span></h1>
+
+        <div class="searching">Loading...</div>
+
+        <div class="empty-result d-none">
+          <p class="text-center">Không có kết quả tìm kiếm</p>
+        </div>
+
+        <div class="search-result d-none">
+          <div class="d-flex justify-content-end mb-3">
+            <form class="filter-form">
+              <label for="sort-by-price">Sắp xếp theo giá</label>
+              <select
+                id="sort-by-price"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected value="">Lựa chọn</option>
+                <option value="asc">Tăng dần</option>
+                <option value="desc">Giảm dần</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="product-list d-flex flex-wrap gap-3"></div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -116,5 +148,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
