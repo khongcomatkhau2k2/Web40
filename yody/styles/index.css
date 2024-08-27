@@ -145,6 +145,7 @@ body {
     align-items: center;
 }
 
+/*cần sửa lệch 3 dấu chấm */
 .dot {
     width: 70px;
     display: flex;
@@ -152,7 +153,6 @@ body {
     align-items: center;
     position: absolute;
     bottom: 20px;
-    right: 50%;
 }
 
 .dot1 {
