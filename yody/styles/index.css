@@ -11,12 +11,22 @@ body {
 }
 
 /* Header */
+/* về hỏi phần width tại vì lỡ tăng 1px */
 #header {
-    width: 1332px;
+    width: 1333px;
     height: 71.2px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* Đặt phần tử ở phía trên cùng của cửa sổ trình duyệt */
+    left: 50%;
+    /* Đặt phần tử ở giữa theo trục ngang của cửa sổ trình duyệt */
+    transform: translateX(-50%);
+    /* Đưa phần tử về giữa bằng cách dịch chuyển nó một nửa chiều rộng của nó */
+    z-index: 1000;
+    background-color: white;
 }
 
 .navbar-header {
@@ -27,6 +37,7 @@ body {
 /* logo MU(trang chủ) */
 .logo {
     margin-right: 32px;
+    background: none;
 }
 
 #header ul {
@@ -109,7 +120,8 @@ body {
 /* Body */
 .wrapper {
     max-width: 1332px;
-    margin: auto;
+    /* cách header 90px,trái phải auto,dưới 0 */
+    margin: 90px auto 0;
 }
 
 .poster {
@@ -420,6 +432,7 @@ body {
 .email {
     display: flex;
     gap: 12px;
+    align-items: center;
 }
 
 .contact-custom_svg {
