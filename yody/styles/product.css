@@ -1,0 +1,259 @@
+.wrapper {
+    width: 1332px;
+    /* cách header 90px,trái phải auto,dưới 0 */
+    margin: 90px auto 0;
+}
+
+.page-yody {
+    padding: 10px;
+}
+
+.product-detail {
+    display: flex;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.min-column {
+    width: 44px;
+}
+
+.product-list-img {
+    width: 44px;
+
+
+}
+
+.product-img {
+    width: 48px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.product-big-img {
+    width: 492px;
+}
+
+.product-big-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-info {
+    width: 604px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-sold {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* màu của 5 ngôi sao */
+.product-social-proof_star-active__9ucGG path {
+    fill: #fcaf17;
+    stroke: #fcaf17;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-sale {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.star-sale {
+    display: flex;
+    align-items: center;
+}
+
+.img-star {
+    width: 41px;
+    height: 41px;
+}
+
+.eya-view {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-color,
+.size-color {
+    display: flex;
+    gap: 9px;
+}
+
+.product-color1 {
+    background-color: pink;
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.product-color2 {
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+}
+
+.product-color3 {
+    background-color: grey;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.product-size {
+    display: flex;
+    justify-content: space-between;
+}
+
+.size-color {
+    font-size: 12px;
+}
+
+.size-color1 {
+    background-color: white;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #D3D8E2;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #D3D8E2;
+    position: relative;
+    overflow: hidden;
+    /* Đảm bảo đường chéo không bị tràn ra ngoài */
+}
+
+.size-color1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, transparent 49%, #D3D8E2 50%, transparent 51%);
+    transform: rotate(-90deg);
+    transform-origin: center;
+    z-index: 1;
+    /* Đảm bảo đường chéo nằm trên cùng */
+}
+
+.size-color2 {
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.size-color3 {
+    background-color: white;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #D3D8E2;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.sub-and-add {
+    width: 144px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #d3d8e2;
+    border-radius: 10px;
+
+
+}
+
+.addtocart {
+    font-weight: bold;
+    width: 393px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.buy {
+    font-weight: bold;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 10px;
+    background-color: #fcaf17;
+}
+
+.bank {
+    height: 88px;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.bank-img {
+    height: 28px;
+    display: flex;
+    gap: 12px;
+}
+
+.bank-img img {
+    height: 100%;
+}
+
+.bank-text {
+    font-size: 12px;
+}
+
+.describe-and-ship{
+    width: 903px;
+    display: flex;
+    gap: 53px;
+}
+.describe{
+    width: 492px;
+}
+.ship{
+
+}
+.ship1{
+    display: flex;
+}

@@ -13,6 +13,263 @@ video {
     display: block;
 } */
 
+:root {
+    --background-color-light: #f2f5f8;
+    --background-color-dark: #1c2430;
+    --text-color1: #1c2430;
+    --text-color2: #949494;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Áp dụng font Inter cho toàn bộ trang */
+}
+
+/* Header */
+/* về hỏi phần width tại vì lỡ tăng 1px */
+#header {
+    width: 100%;
+    padding: 0 72px;
+    /* Padding 20px ở hai bên (trái và phải) */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước của phần tử */
+    height: 71.2px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* Đặt phần tử ở phía trên cùng của cửa sổ trình duyệt */
+    left: 50%;
+    /* Đặt phần tử ở giữa theo trục ngang của cửa sổ trình duyệt */
+    transform: translateX(-50%);
+    /* Đưa phần tử về giữa bằng cách dịch chuyển nó một nửa chiều rộng của nó */
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 0.8px solid #f2f5f8;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* logo MU(trang chủ) */
+.logo {
+    margin-right: 32px;
+    background: none;
+}
+
+#header ul {
+
+    align-items: center;
+    display: flex;
+    /* margin: 0 ;Nếu dùng bootstrap thì viết */
+}
+
+#header ul li {
+    list-style: none;
+    color: var(--text-color1);
+    padding: 0 12px;
+    font-size: 1rem;
+    color: #1c2430;
+
+}
+
+.header-icons {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    width: 150px;
+    height: 40px;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px 0 40px;
+    /* Padding bên trái và bên phải để tạo không gian cho biểu tượng và chữ */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f2f5f5;
+    box-sizing: border-box;
+    font-size: 1rem;
+    /* Kích thước chữ */
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Khoảng cách từ trái */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* Căn giữa biểu tượng theo chiều dọc */
+    height: 100%;
+    color: #0F0F0F;
+}
+
+.search-button svg {
+    margin-right: 10px;
+    /* Khoảng cách giữa biểu tượng và chữ */
+    fill: currentColor;
+    height: 20px;
+    /* Đặt chiều cao của biểu tượng nếu cần */
+    width: 20px;
+    /* Đặt chiều rộng của biểu tượng nếu cần */
+}
+
+.search-button {
+    padding-right: 10px;
+    /* Padding bên phải để tạo khoảng cách giữa chữ và cạnh nút */
+    font-size: 1rem;
+    /* Kích thước chữ */
+    line-height: 40px;
+    /* Căn giữa chữ theo chiều dọc trong ô input */
+}
+
+/* contact */
+.contact {
+    background-color: var(--background-color-dark);
+    width: 100%;
+    height: 384px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.boc3cot {
+    display: flex;
+    gap: 16px;
+}
+
+.cot1,
+.cot2,
+.cot3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.cot1 {
+    width: 380px;
+}
+
+.cot2 {
+    width: 380px;
+}
+
+.cot1 ul li,
+.cot2 ul li {
+    color: #bfcad9;
+    list-style: none;
+    padding-top: 16px;
+    font-size: 14px;
+}
+
+.cot3 {
+    width: 548px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.cot1 h4,
+.cot2 h4,
+.cot3 h4 {
+    font-size: 16px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.phone,
+.comment,
+.email {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.contact-custom_svg {
+    width: 28px;
+    height: 28px;
+    /* màu viền của svg */
+    color: #bfcad9;
+}
+
+.contact1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.contact1 p {
+    color: #bfcad9;
+}
+
+.social-network {
+    display: flex;
+    gap: 16px;
+}
+
+/* footer */
+#footer {
+    background-color: var(--background-color-dark);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: flex-start;
+    width: 1332px;
+}
+
+.footer-box1 {
+    color: white;
+    width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-box1_text1 {
+    font-size: 16px;
+}
+
+.footer-box1_text2 {
+    font-size: 14px;
+    width: 493px;
+}
+
+.footer-box2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 /* Css cho màn tablet */
 @media (min-width: 768px) and (max-width: 1023px) {}
 

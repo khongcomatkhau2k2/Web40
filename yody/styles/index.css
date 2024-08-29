@@ -13,7 +13,11 @@ body {
 /* Header */
 /* về hỏi phần width tại vì lỡ tăng 1px */
 #header {
-    width: 1333px;
+    width: 100%;
+    padding: 0 72px;
+    /* Padding 20px ở hai bên (trái và phải) */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước của phần tử */
     height: 71.2px;
     margin: auto;
     display: flex;

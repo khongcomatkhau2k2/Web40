@@ -1,0 +1,344 @@
+:root {
+    --background-color-light: #f2f5f8;
+    --background-color-dark: #1c2430;
+    --text-color1: #1c2430;
+    --text-color2: #949494;
+}
+
+/* Body */
+.wrapper {
+    width: 1332px;
+    /* cách header 90px,trái phải auto,dưới 0 */
+    margin: 90px auto 0;
+}
+
+.poster {
+    position: relative;
+    height: 444px;
+}
+
+.img-poster {
+    width: 100%;
+    height: 100%;
+}
+
+.page-yody {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.display-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+
+.sort-by {
+    border-radius: 10px;
+    background-color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+.rotate-svg {
+    transform: rotate(90deg);
+    /* Xoay 90 độ theo chiều kim đồng hồ */
+}
+
+.filter-product-container {
+    display: flex;
+    gap: 12px;
+}
+
+.filter-container {
+    width: 212px;
+    padding-right: auto;
+}
+
+.filter {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sex,
+.mausac,
+.size,
+.price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0;
+    border-bottom: 0.8px solid #f2f5f8;
+}
+
+
+.sex-text,
+.mausac-text,
+.size-text,
+.price-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+/* Check box */
+.checkbox-group {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Khoảng cách giữa các checkbox */
+    flex-wrap: wrap;
+    /* Cho phép xuống dòng nếu không đủ chỗ */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    /* Chiều rộng của checkbox */
+    height: 20px;
+    /* Chiều cao của checkbox */
+    margin-right: 8px;
+    /* Khoảng cách giữa checkbox và nhãn */
+    accent-color: #007bff;
+    /* Màu của checkbox */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 12px;
+    /* Khoảng cách giữa checkbox và nhãn */
+}
+
+
+
+.checkbox-input:checked {
+    background-color: #007bff;
+    /* Màu nền khi checkbox được chọn */
+    border-color: #007bff;
+    /* Màu viền khi checkbox được chọn */
+}
+
+
+
+.color-circle-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-circle {
+    width: 63px;
+    height: 68px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.container-box-size {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-size-text,
+.box-size-number {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.box-size {
+    padding: 8px;
+    border: 1px solid rgb(207, 215, 227);
+    width: 62.8px;
+    height: 39.6px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product-list {
+    width: 1108px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.product-item {
+    width: 268px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.img-tag {
+    position: relative;
+}
+
+/*  giảm giá 50% góc trái */
+.discount-50-percent {
+    background-color: #e14337;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    height: 22px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-name {
+    font-size: 14px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.discount-product-price {
+    font-size: 16px;
+    color: red;
+    font-weight: 600;
+}
+
+.origin-product-price {
+    font-size: 12px;
+    color: #c7c7c7;
+    text-decoration: line-through;
+    text-decoration-color: #c7c7c7;
+    /* Thay đổi màu sắc của gạch ngang */
+}
+
+
+
+.product-color {
+    display: flex;
+    gap: 9px;
+}
+
+.product-color1 {
+    background-color: pink;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.product-color2 {
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.product-color3 {
+    background-color: grey;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.see-more {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+
+.sort-by .rotate-svg,
+.see-more .rotate-svg {
+    transform: rotate(-90deg);
+    /* Xoay 90 độ theo chiều kim đồng hồ */
+}
+
+.bocxemthem {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.product-item {
+    position: relative;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #f2f5f8;
+    /* Màu nền của nút */
+    width: 36px;
+    height: 36px;
+    /* Khoảng cách bên trong nút */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    border-radius: 50%;
+}
+
+.prev {
+    left: -20px;
+    /* Vị trí nút prev ở bên trái */
+}
+
+.next {
+    right: -20px;
+    /* Vị trí nút next ở bên phải */
+}
