@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Chi tiết sản phẩm</title>
     <!-- Link các thứ -->
     <!--1. Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -172,6 +172,136 @@
         </div>
     </div>
     <!-- Body -->
+    <div class="wrapper">
+        <div class="text-cart">Giỏ hàng</div>
+        <!-- left và right -->
+        <div class="box">
+            <div class="left">
+                <!-- left sẽ gồm left1 và left 2 -->
+                <!-- left1(chúc mừng đơn hàng và gạch ngang màu vàng) -->
+                <div class="left1">
+                    <div>Chúc mừng đơn hàng của bạn được <span style="font-weight: 600;">Miễn phí vận chuyển</span>
+                    </div>
+                    <!-- gạch ngang màu xanh -->
+                    <div class="freeship">
+                        <div class="dash"></div>
+                        <svg width="28" height="28" id=":r31:" class="absolute" viewBox="0 0 29 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" style="left: calc(0% - 4px);">
+                            <rect x="0.854492" y="0.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                            <g clip-path="url(#clip0_159_1965)">
+                                <path
+                                    d="M14.3544 17.7154L11.6884 19.397C11.5706 19.4755 11.4475 19.5091 11.319 19.4979C11.1905 19.4867 11.0781 19.4418 10.9817 19.3634C10.8854 19.2849 10.8104 19.1869 10.7569 19.0694C10.7034 18.9515 10.6926 18.8196 10.7248 18.6739L11.4314 15.4956L9.07057 13.3599C8.9635 13.259 8.89669 13.144 8.87013 13.0149C8.84315 12.8862 8.85108 12.7601 8.8939 12.6368C8.93673 12.5135 9.00097 12.4126 9.08663 12.3341C9.17228 12.2557 9.29006 12.2052 9.43995 12.1828L12.5556 11.8969L13.7601 8.90359C13.8137 8.76906 13.8968 8.66816 14.0094 8.6009C14.1216 8.53363 14.2366 8.5 14.3544 8.5C14.4721 8.5 14.5874 8.53363 14.7 8.6009C14.8122 8.66816 14.8951 8.76906 14.9486 8.90359L16.1531 11.8969L19.2688 12.1828C19.4187 12.2052 19.5365 12.2557 19.6221 12.3341C19.7078 12.4126 19.772 12.5135 19.8148 12.6368C19.8577 12.7601 19.8658 12.8862 19.8392 13.0149C19.8123 13.144 19.7452 13.259 19.6382 13.3599L17.2773 15.4956L17.984 18.6739C18.0161 18.8196 18.0054 18.9515 17.9519 19.0694C17.8983 19.1869 17.8234 19.2849 17.727 19.3634C17.6307 19.4418 17.5182 19.4867 17.3897 19.4979C17.2613 19.5091 17.1381 19.4755 17.0204 19.397L14.3544 17.7154Z"
+                                    fill="#FCAF17"></path>
+                            </g>
+                            <rect x="0.854492" y="0.5" width="27" height="27" rx="13.5" stroke="#FCAF17"></rect>
+                        </svg>
+                    </div>
+                </div>
+                <!-- left2(sản phẩm) -->
+                <div class="left2">
+                    <div class="product-origin_price">
+                        <div class="checkbox">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" id=":r1bk:" class="text-white">
+                                <path
+                                    d="M9.9998 13.6L15.8998 7.70005C16.0831 7.51672 16.3165 7.42505 16.5998 7.42505C16.8831 7.42505 17.1165 7.51672 17.2998 7.70005C17.4831 7.88338 17.5748 8.11671 17.5748 8.40005C17.5748 8.68338 17.4831 8.91672 17.2998 9.10005L10.6998 15.7C10.4998 15.9 10.2665 16 9.9998 16C9.73314 16 9.4998 15.9 9.2998 15.7L6.6998 13.1C6.51647 12.9167 6.4248 12.6834 6.4248 12.4C6.4248 12.1167 6.51647 11.8834 6.6998 11.7C6.88314 11.5167 7.11647 11.425 7.3998 11.425C7.68314 11.425 7.91647 11.5167 8.0998 11.7L9.9998 13.6Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                        <div style="font-size: 14px; font-weight: 600;">Sản phẩm nguyên giá</div>
+                    </div>
+                    <div class="product">
+                        <div class="checkbox">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" id=":r1bk:" class="text-white">
+                                <path
+                                    d="M9.9998 13.6L15.8998 7.70005C16.0831 7.51672 16.3165 7.42505 16.5998 7.42505C16.8831 7.42505 17.1165 7.51672 17.2998 7.70005C17.4831 7.88338 17.5748 8.11671 17.5748 8.40005C17.5748 8.68338 17.4831 8.91672 17.2998 9.10005L10.6998 15.7C10.4998 15.9 10.2665 16 9.9998 16C9.73314 16 9.4998 15.9 9.2998 15.7L6.6998 13.1C6.51647 12.9167 6.4248 12.6834 6.4248 12.4C6.4248 12.1167 6.51647 11.8834 6.6998 11.7C6.88314 11.5167 7.11647 11.425 7.3998 11.425C7.68314 11.425 7.91647 11.5167 8.0998 11.7L9.9998 13.6Z"
+                                    fill="white"></path>
+                            </svg>
+                        </div>
+                        <div style="width: 120px;height: 160px;">
+                            <img style="width: 100%; height: 100%;" src="images/swn6024-hog-qln6004-den-05.webp" alt="">
+                        </div>
+                        <div class="cart-detail">
+                            <!-- tên và giá -->
+                            <div class="name-and-price">
+                                <div class="name">Áo Khoác Nỉ Thể Thao Nữ</div>
+                                <div class="price">599. 000đ</div>
+                            </div>
+                            <!-- lựa chọn màu,size và bên kia là số lượng -->
+                            <div class="select-and-quantity">
+                                <div class="select">
+                                    <button style="border-radius: 10px;border: none;">
+                                        <span class="see-more">Hồng, M
+                                            <svg class="rotate-svg" width="16" height="16" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg" id=":r80:"
+                                                class="text-yd-typo-title">
+                                                <path
+                                                    d="M14.9998 20.67C14.8098 20.67 14.6198 20.6 14.4698 20.45L7.94979 13.93C6.88979 12.87 6.88979 11.13 7.94979 10.07L14.4698 3.55002C14.7598 3.26002 15.2398 3.26002 15.5298 3.55002C15.8198 3.84002 15.8198 4.32002 15.5298 4.61002L9.00979 11.13C8.52979 11.61 8.52979 12.39 9.00979 12.87L15.5298 19.39C15.8198 19.68 15.8198 20.16 15.5298 20.45C15.3798 20.59 15.1898 20.67 14.9998 20.67Z"
+                                                    fill="currentcolor"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="quantity">
+                                    <div class="minus">-</div>
+                                    <div>1</div>
+                                    <div class="plus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right(bên chi tiết đơn hàng) và thanh toán -->
+            <div class="right">
+                <!-- bọc chi tiết đơn hàng -->
+                <div class="order-details">
+                    <div style="font-size: 20px;">Chi tiết đơn hàng</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 16px;">
+                        <span style="color: #616161;">Tổng giá trị sản phẩm</span>
+                        <span>599.000 đ</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #616161;">Giảm giá</span>
+                        <span style="color: #e14337;">- 29.950 đ</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #616161;">Vận chuyển</span>
+                        <span>20.000 đ</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #616161;">Giảm giá vận chuyển</span>
+                        <span style="color: #e14337;">- 20.000 đ</span>
+                    </div>
+                    <!-- gạch chân -->
+                    <div style=" height: 1px;width: 100%;background-color: #eceff4;">
+                    </div>
+                    <div
+                        style="font-size: 20px; color: #1c2430; font-weight: 500; display: flex; justify-content: space-between;">
+                        <span>Tổng thanh toán</span>
+                        <span>569.050 đ</span>
+                    </div>
+                    <span style="color: #e14337; font-size: 14px; text-align: right;">Bạn đã tiết kiệm được 49.950 đ
+                    </span>
+                    <!-- pay -->
+                    <div class="buy">Mua hàng (1)</div>
+                    <div class="bank">
+                        <div class="bank-img">
+                            <img src="images/zalopay.webp" alt="">
+                            <img src="images/visa-card.webp" alt="">
+                            <img src="images/master-card.webp" alt="">
+                            <img src="images/vnpay-qr.webp" alt="">
+                            <img src="images/momo.webp" alt="">
+                        </div>
+                        <div class="bank-text">Đảm bảo thanh toán an toàn và bảo mật</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <!-- Contact -->
     <div class="contact">
@@ -200,14 +330,16 @@
                     <li>Tin khuyến mãi</li>
                 </ul>
                 <ul style="padding-top: 16px;">Địa chỉ liên hệ
-                    <li style="width: 282px;line-height: 1.375rem;">Địa chỉ: Đường An Định - Phường Việt Hòa - Thành phố
+                    <li style="width: 282px;line-height: 1.375rem;">Địa chỉ: Đường An Định - Phường Việt Hòa - Thành
+                        phố
                         Hải
                         Dương</li>
                 </ul>
             </div>
             <div class="cot3">
                 <h4>YODY lắng nghe bạn</h4>
-                <p style="line-height: 1.375rem;">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+                <p style="line-height: 1.375rem;">Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng
+                    góp từ
                     khách hàng để có thể nâng cấp trải
                     nghiệm dịch vụ
                     và sản phẩm tốt hơn nữa.
@@ -342,7 +474,8 @@
         <div class="footer-box">
             <div class="footer-box1">
                 <div class="footer-box1_text1">@ CÔNG TY CỔ PHẦN THỜI TRANG YODY</div>
-                <div class="footer-box1_text2">Mã số doanh nghiệp: 0801206940. Giấy chứng nhận đăng ký doanh nghiệp do
+                <div class="footer-box1_text2">Mã số doanh nghiệp: 0801206940. Giấy chứng nhận đăng ký doanh nghiệp
+                    do
                     Sở Kế hoạch và Đầu tư TP
                     Hải Dương cấp lần đầu
                     ngày 04/03/2017</div>
