@@ -76,6 +76,51 @@ body {
 
 }
 
+/* bổ sung thêm cho hover */
+/* Ẩn mặc định các hình ảnh trong collection */
+
+
+
+
+li .collection {
+    display: none;
+    position: absolute;
+    width: 100%;
+    /* Tổng chiều rộng của collection */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background: white;
+    /* Nền cho các ảnh nếu cần */
+    padding: 10px 70px;
+    /* Khoảng đệm nếu cần */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Bóng nếu cần */
+}
+
+li:hover .collection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collection .col1 {
+    width: calc(25% - 12px);
+    /* Chiếm 1/4 chiều rộng của collection, trừ đi khoảng cách */
+    margin-right: 12px;
+    text-align: left;
+}
+
+.collection .col1:nth-child(4n) {
+    margin-right: 0;
+    /* Loại bỏ khoảng cách bên phải của phần tử cuối cùng trong mỗi hàng */
+}
+
+.collection img {
+    width: 100%;
+    /* Đảm bảo hình ảnh không bị biến dạng */
+    height: auto;
+}
+
 .header-icons {
     width: 200px;
     display: flex;
