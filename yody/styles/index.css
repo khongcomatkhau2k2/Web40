@@ -564,6 +564,7 @@ body {
 
 .slick-prev {
     left: 0;
+
 }
 
 .slick-next {
@@ -603,4 +604,26 @@ body {
 .slick-dots .slick-active button {
     background-color: white;
 
+}
+
+/* tự thêm */
+/* màu của chấm bé tí */
+.slick-dots li button:before {
+    color: white;
+    font-family: slick;
+    font-size: 10px;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* tự thêm */
+.slick-dots li.slick-active button:before {
+    color: white;
 }
