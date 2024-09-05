@@ -41,8 +41,7 @@ body {
 
 .header {
     width: 100%;
-    max-width: 100%;
-    padding: 0 72px;
+    max-width: 1332px;
     /* Padding 20px ở hai bên (trái và phải) */
     box-sizing: border-box;
     /* Đảm bảo padding không làm tăng kích thước của phần tử */
