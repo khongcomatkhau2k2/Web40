@@ -29,6 +29,19 @@ body {
 /* về hỏi phần width tại vì lỡ tăng 1px */
 #header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    /* Đặt phần tử ở phía trên cùng của cửa sổ trình duyệt */
+    left: 0;
+    /* Đặt phần tử ở giữa theo trục ngang của cửa sổ trình duyệt */
+    /* Đưa phần tử về giữa bằng cách dịch chuyển nó một nửa chiều rộng của nó */
+    z-index: 1000;
+    background-color: white;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
     padding: 0 72px;
     /* Padding 20px ở hai bên (trái và phải) */
     box-sizing: border-box;
@@ -37,17 +50,8 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    /* Đặt phần tử ở phía trên cùng của cửa sổ trình duyệt */
-    left: 50%;
-    /* Đặt phần tử ở giữa theo trục ngang của cửa sổ trình duyệt */
-    transform: translateX(-50%);
-    /* Đưa phần tử về giữa bằng cách dịch chuyển nó một nửa chiều rộng của nó */
-    z-index: 1000;
-    background-color: white;
-    border-bottom: 0.8px solid #f2f5f8;
 }
+
 
 .navbar-header {
     display: flex;
