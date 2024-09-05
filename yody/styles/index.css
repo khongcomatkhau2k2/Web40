@@ -573,8 +573,8 @@ body {
 /* nút bọc 5 dấu chấm trắng */
 .slick-dots {
     position: absolute;
-    /* nằm dưới 0 */
-    bottom: 0;
+    /* nằm dưới cách ảnh 20px */
+    bottom: 20px;
     /* và căn giữa chiều ngang */
     left: 50%;
     transform: translate(-50%, 0);
@@ -596,6 +596,7 @@ body {
     border: none;
     outline: none;
     transition: all 0.2s linear;
+
 }
 
 /* khi dấu chấm trắng kích hoạt thì có màu này */
