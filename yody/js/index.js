@@ -38,8 +38,8 @@ $(document).ready(function () {
           slidesToShow: 1,
           // mất mũi tên
           arrows: false,
-          // để biết kéo đến phần tử cuối là k kéo đc nữa ta đề false
-          infinite: false,
+          // để biết kéo đến phần tử cuối là k kéo đc nữa ta đề false,có thì true
+          infinite: true,
         },
       },
     ],
