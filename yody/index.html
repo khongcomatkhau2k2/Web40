@@ -33,6 +33,11 @@
     <!-- Header -->
     <div id="header">
         <div class="header">
+            <!--svg 3 thanh ngang ở trước logo khi responsive -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-outline" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
             <div class="navbar-header">
                 <a href="index.html">
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="71.2" height="auto"
@@ -224,6 +229,18 @@
                 <div class="image"><img src="./images/poster3.webp" alt="" class="img-poster"></div>
             </div>
         </div>
+        <!-- Hình to khi responsive về bé -->
+        <div class="poster-responsive image-slider">
+            <div class="image-item">
+                <div class="image"><img src="./images/responslick.webp" alt="" class="img-poster"></div>
+            </div>
+            <div class="image-item">
+                <div class="image"><img src="./images/responslick2.webp" alt="" class="img-poster"></div>
+            </div>
+            <div class="image-item">
+                <div class="image"><img src="./images/responslick3.webp" alt="" class="img-poster"></div>
+            </div>
+        </div>
         <!-- 4 Hình xanh -->
         <div class="four-img">
             <div class="img-box">
@@ -240,7 +257,7 @@
             </div>
         </div>
         <!-- Dòng chữ sản phẩm yêu thích-->
-        <h2 style="font-size: 32px; text-align: center; margin-top: 40px;">Sản phẩm ưa chuộng</h2>
+        <h2 class="text-like" style="font-size: 32px; text-align: center; margin-top: 40px;">Sản phẩm ưa chuộng</h2>
         <!-- 5 loại sản phẩm yêu thích -->
         <div class="favorite-product">
             <div class="favorite1">
@@ -273,7 +290,7 @@
                     <div class="product-color1"></div>
                     <div class="product-color2"></div>
                     <div class="product-color3"></div>
-                    <div class="product-color4"></div>
+
                 </div>
             </div>
             <div class="product-item">
@@ -288,7 +305,6 @@
                     <div class="product-color1"></div>
                     <div class="product-color2"></div>
                     <div class="product-color3"></div>
-                    <div class="product-color4"></div>
                 </div>
             </div>
             <div class="product-item">
@@ -303,7 +319,6 @@
                     <div class="product-color1"></div>
                     <div class="product-color2"></div>
                     <div class="product-color3"></div>
-                    <div class="product-color4"></div>
                 </div>
             </div>
             <div class="product-item">
@@ -318,14 +333,18 @@
                     <div class="product-color1"></div>
                     <div class="product-color2"></div>
                     <div class="product-color3"></div>
-                    <div class="product-color4"></div>
                 </div>
             </div>
         </div>
         <button class="more">Xem thêm</button>
-        <div class="poster">
-            <img src="./images/poster2.webp" alt="" class="img-poster">
+        <div class="poster2">
+            <img src="./images/poster2.webp" alt="" class="img-poster2">
         </div>
+        <div class="poster2-responsive">
+            <img src="./images/123344.webp" alt="" class="img-poster2-responsive">
+        </div>
+
+
 
         <!-- Gợi ý sản phẩm(suggest) -->
         <div class="suggest">
@@ -403,98 +422,105 @@
                     <div class="product-color4"></div>
                 </div>
             </div>
+            <div class="product-item1">
+                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
+                <div class="product-name">
+                    Áo Phông Nam Slim Fit Rib
+                </div>
+                <div class="product-price">
+                    249.000 đ
+                </div>
+                <div class="product-color">
+                    <div class="product-color1"></div>
+                    <div class="product-color2"></div>
+                    <div class="product-color3"></div>
+                    <div class="product-color4"></div>
+                </div>
+            </div>
+            <div class="product-item1">
+                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
+                <div class="product-name">
+                    Áo Phông Nam Slim Fit Rib
+                </div>
+                <div class="product-price">
+                    249.000 đ
+                </div>
+                <div class="product-color">
+                    <div class="product-color1"></div>
+                    <div class="product-color2"></div>
+                    <div class="product-color3"></div>
+                    <div class="product-color4"></div>
+                </div>
+            </div>
+            <div class="product-item1">
+                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
+                <div class="product-name">
+                    Áo Phông Nam Slim Fit Rib
+                </div>
+                <div class="product-price">
+                    249.000 đ
+                </div>
+                <div class="product-color">
+                    <div class="product-color1"></div>
+                    <div class="product-color2"></div>
+                    <div class="product-color3"></div>
+                    <div class="product-color4"></div>
+                </div>
+            </div>
+            <div class="product-item1">
+                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
+                <div class="product-name">
+                    Áo Phông Nam Slim Fit Rib
+                </div>
+                <div class="product-price">
+                    249.000 đ
+                </div>
+                <div class="product-color">
+                    <div class="product-color1"></div>
+                    <div class="product-color2"></div>
+                    <div class="product-color3"></div>
+                    <div class="product-color4"></div>
+                </div>
+            </div>
+            <div class="product-item1">
+                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
+                <div class="product-name">
+                    Áo Phông Nam Slim Fit Rib
+                </div>
+                <div class="product-price">
+                    249.000 đ
+                </div>
+                <div class="product-color">
+                    <div class="product-color1"></div>
+                    <div class="product-color2"></div>
+                    <div class="product-color3"></div>
+                    <div class="product-color4"></div>
+                </div>
+            </div>
             <!-- sản phẩm click vào ra link chi tiết -->
-            <a href="product.html" style="list-style: none; text-decoration: none;color: #000000;">
-                <div class="product-item1">
+            <div class="product-item1">
+                <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
                     <img src="./images/swn6024-hog-qln6004-den-05.webp" alt="">
-                    <div class="product-name">
-                        Áo khoác nỉ thể thao nữ
-                    </div>
-                    <div class="product-price">
-                        599.000 đ
-                    </div>
-                    <div class="product-color">
+                </a>
+                <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
+                    <div class="product-name">Áo khoác nỉ thể thao nữ</div>
+                </a>
+                <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
+                    <div class="product-price">599.000 đ</div>
+                </a>
+                <div class="product-color">
+                    <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
                         <div class="product-color1"></div>
+                    </a>
+                    <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
                         <div class="product-color2"></div>
+                    </a>
+                    <a href="product.html" style="list-style: none; text-decoration: none; color: #000000;">
                         <div class="product-color3"></div>
-                    </div>
-                </div>
-            </a>
-            <div class="product-item1">
-                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
-                <div class="product-name">
-                    Áo Phông Nam Slim Fit Rib
-                </div>
-                <div class="product-price">
-                    249.000 đ
-                </div>
-                <div class="product-color">
-                    <div class="product-color1"></div>
-                    <div class="product-color2"></div>
-                    <div class="product-color3"></div>
-                    <div class="product-color4"></div>
+                    </a>
                 </div>
             </div>
-            <div class="product-item1">
-                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
-                <div class="product-name">
-                    Áo Phông Nam Slim Fit Rib
-                </div>
-                <div class="product-price">
-                    249.000 đ
-                </div>
-                <div class="product-color">
-                    <div class="product-color1"></div>
-                    <div class="product-color2"></div>
-                    <div class="product-color3"></div>
-                    <div class="product-color4"></div>
-                </div>
-            </div>
-            <div class="product-item1">
-                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
-                <div class="product-name">
-                    Áo Phông Nam Slim Fit Rib
-                </div>
-                <div class="product-price">
-                    249.000 đ
-                </div>
-                <div class="product-color">
-                    <div class="product-color1"></div>
-                    <div class="product-color2"></div>
-                    <div class="product-color3"></div>
-                    <div class="product-color4"></div>
-                </div>
-            </div>
-            <div class="product-item1">
-                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
-                <div class="product-name">
-                    Áo Phông Nam Slim Fit Rib
-                </div>
-                <div class="product-price">
-                    249.000 đ
-                </div>
-                <div class="product-color">
-                    <div class="product-color1"></div>
-                    <div class="product-color2"></div>
-                    <div class="product-color3"></div>
-                    <div class="product-color4"></div>
-                </div>
-            </div>
-            <div class="product-item1">
-                <img src="./images/ao-thun-nam-TSM7047-NAU (1).webp" alt="">
-                <div class="product-name">
-                    Áo Phông Nam Slim Fit Rib
-                </div>
-                <div class="product-price">
-                    249.000 đ
-                </div>
-                <div class="product-color">
-                    <div class="product-color1"></div>
-                    <div class="product-color2"></div>
-                    <div class="product-color3"></div>
-                    <div class="product-color4"></div>
-                </div>
-            </div>
+
         </div>
         <button class="more">Xem thêm</button>
     </div>
@@ -660,6 +686,8 @@
                     </svg>
                 </div>
             </div>
+            <div class="contact-text__responsive">Tuyển dụng</div>
+            <div class="contact-text__responsive">Hệ thống cửa hàng</div>
         </div>
     </div>
     <!-- Footer -->

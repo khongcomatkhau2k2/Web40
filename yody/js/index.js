@@ -27,8 +27,9 @@ $(document).ready(function () {
         // độ rộng khỉ nhỏ hơn 1025px
         breakpoint: 1025,
         settings: {
-          // sẽ ra 3 phần tử
-          slidesToShow: 3,
+          // sẽ ra 1 phần tử
+          slidesToShow: 1,
+          arrows: false,
         },
       },
       {
@@ -47,3 +48,6 @@ $(document).ready(function () {
     // autoplaySpeed: 1000,
   });
 });
+
+
+

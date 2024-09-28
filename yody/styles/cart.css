@@ -6,6 +6,9 @@
 }
 
 .text-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     background-color: white;
     width: 1220px;
     /* cách header 90px,trái phải auto,dưới 0 */
@@ -201,4 +204,120 @@
 
 .bank-text {
     font-size: 12px;
+}
+
+
+@media (max-width: 1280px) {
+    #header {
+        display: none;
+    }
+
+    .text-cart {
+        display: flex;
+        background-color: white;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .daunho {
+        display: block !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* phần đít */
+    .contact {
+        background-color: var(--background-color-dark);
+        width: 100%;
+        height: auto !important;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgb(217, 217, 217);
+    }
+
+    .boc3cot {
+        width: 100%;
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+    }
+
+    .cot1 {
+        order: 2;
+    }
+
+    .cot2 {
+        order: 3;
+    }
+
+    .cot2 h4,
+    .cot1 h4,
+    .cot3 h4 {
+        font-size: 14px;
+        font-weight: normal !important;
+    }
+
+    .cot3 {
+        width: 100%;
+        order: 1 !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cot1 ul {
+        display: none;
+    }
+
+    .cot2 ul {
+        display: none;
+    }
+
+    .cot3 ul {
+        display: none;
+    }
+
+    .contact-text__responsive {
+        order: 4;
+        font-size: 14px;
+        color: white;
+        display: block;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    .footer-box {
+        display: inline;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .footer-box1 {
+        width: 100%;
+
+    }
+
+    .footer-box1_text1 {
+        font-size: 14px;
+    }
+
+    .footer-box1_text2 {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 0 20px;
+    }
 }

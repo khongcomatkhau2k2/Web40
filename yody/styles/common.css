@@ -26,7 +26,6 @@ body {
 }
 
 /* Header */
-/* về hỏi phần width tại vì lỡ tăng 1px */
 #header {
     width: 100%;
     position: fixed;
@@ -48,6 +47,7 @@ body {
     height: 71.2px;
     margin: auto;
     display: flex;
+
     justify-content: space-between;
 }
 
@@ -55,6 +55,13 @@ body {
 .navbar-header {
     display: flex;
     justify-content: space-around;
+}
+
+/* 3 thanh ngang svg */
+.menu-outline {
+    width: 24px;
+    height: 24px;
+    display: none;
 }
 
 /* logo MU(trang chủ) */
@@ -170,9 +177,9 @@ li:hover .collection {
     margin-right: 10px;
     /* Khoảng cách giữa biểu tượng và chữ */
     fill: currentColor;
-    height: 20px;
+    height: 24px;
     /* Đặt chiều cao của biểu tượng nếu cần */
-    width: 20px;
+    width: 24px;
     /* Đặt chiều rộng của biểu tượng nếu cần */
 }
 
@@ -277,6 +284,10 @@ li:hover .collection {
 .social-network {
     display: flex;
     gap: 16px;
+}
+
+.contact-text__responsive {
+    display: none;
 }
 
 /* footer */

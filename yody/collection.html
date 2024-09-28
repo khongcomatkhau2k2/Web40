@@ -33,6 +33,11 @@
     <!-- Header -->
     <div id="header">
         <div class="header">
+            <!--svg 3 thanh ngang ở trước logo khi responsive -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-outline" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
             <div class="navbar-header">
                 <a href="index.html">
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="71.2" height="auto"
@@ -143,8 +148,8 @@
                     <li>Mới về</li>
                     <li>
                         <a href="collection.html" style=" text-decoration: none;
-                                    color: #1c2430;
-                                    display: block;">Bộ sưu tập
+                                color: #1c2430;
+                                display: block;">Bộ sưu tập
                             <div class="collection">
                                 <div class="col1" style="margin-top: 15px;">
                                     <div class="text-col1" style="font-size: 16px;color: #1c2430;padding-bottom: 10px;">
@@ -152,7 +157,8 @@
                                     <img src="images/jeans_flex.webp" alt="Image 1">
                                 </div>
                                 <div class="col1" style="margin-top: 15px;">
-                                    <div class="text-col1" style="font-size: 16px;color: #1c2430;padding-bottom: 10px;">BST
+                                    <div class="text-col1" style="font-size: 16px;color: #1c2430;padding-bottom: 10px;">
+                                        BST
                                         POLO 2024</div>
                                     <img src="images/bst_polo.webp" alt="Image 1">
                                 </div>
@@ -162,7 +168,8 @@
                                     <img src="images/yoguu.webp" alt="Image 1">
                                 </div>
                                 <div class="col1" style="margin-top: 15px;">
-                                    <div class="text-col1" style="font-size: 16px;color: #1c2430;padding-bottom: 10px;">YODY
+                                    <div class="text-col1" style="font-size: 16px;color: #1c2430;padding-bottom: 10px;">
+                                        YODY
                                         Sport</div>
                                     <img src="images/sport.webp" alt="Image 1">
                                 </div>
@@ -227,6 +234,14 @@
         </div>
         <!-- Dòng chữ sản phẩm yêu thích-->
         <h2 style="font-size: 30px; text-align: left; margin-top: 30px;">Áo Polo YODY</h2>
+        <!-- Phần bọc lọc responsive -->
+        <div class="filter-sex" style="display: none;">
+            <span style="text-decoration: underline; text-underline-offset: 10px; ">Tất cả</span>
+            <span>Nữ</span>
+            <span>Bé trai</span>
+            <span>Bé gái</span>
+            <span>Nam</span>
+        </div>
         <!-- Số lượng sản phẩm và sắp xếp -->
         <div class="display-sort">
             <div class="number-product">79 sản phẩm</div>
@@ -736,17 +751,24 @@
             </button>
         </div>
         <!--có thể bạn sẽ thích -->
-        <div class="filter-product-container" style="padding-bottom: 32px;">
+        <div class="filter-product-container like1" style="padding-bottom: 32px;">
             <div class="filter-container">
             </div>
             <h2 style="font-size: 30px; text-align: left; margin-top: 30px;">Có thể bạn sẽ thích</h2>
         </div>
+        <div class="filter-product-container like2" style="padding-bottom: 32px; display: none;">
+            <div class="filter-container">
+            </div>
+            <h2 style="font-size: 30px; text-align: left; margin-top: 30px;">Sale cuối mùa - Giảm đến <span
+                    style="color: #fcaf17;">50%</span></h2>
+        </div>
+
         <div class="filter-product-container">
             <!-- bên bộ lọc ở phần này sẽ kcj -->
             <div class="filter-container">
             </div>
             <!-- bên các sản phẩm -->
-            <div class="product-list">
+            <div class="product-list aaa">
                 <div class="product-item">
                     <img src="./images/ao-thun-nu-TSN7269-GHI (1).webp" alt="">
                     <div class="product-name">
@@ -786,11 +808,119 @@
                         249.000 đ
                     </div>
 
+                </div>
+                <div class="product-item sale">
+                    <!-- bọc ảnh giảm giá và số -50% -->
+                    <div class="img-tag">
+                        <img src="./images/ao-thun-nu-TSN7269-GHI (1).webp" alt="">
+                        <!-- trừ 50% -->
+                        <div class="discount-50-percent">-50%</div>
+                    </div>
+                    <div class="product-name">
+                        Áo Phông Nam Slim Fit Rib
+                    </div>
+                    <!-- bọc giá đã giảm và giá chưa giảm -->
+                    <div class="product-price">
+                        <!-- giảm -->
+                        <div class="discount-product-price">
+                            250.000 đ
+                        </div>
+                        <!-- chưa giảm -->
+                        <div class="origin-product-price">
+                            500.000 đ</div>
+                    </div>
+                    <div class="product-color">
+                        <div class="product-color1"></div>
+                        <div class="product-color2"></div>
+                        <div class="product-color3"></div>
+                        <div class="product-color4"></div>
+                    </div>
+                </div>
+                <div class="product-item sale">
+                    <!-- bọc ảnh giảm giá và số -50% -->
+                    <div class="img-tag">
+                        <img src="./images/ao-thun-nu-TSN7269-GHI (1).webp" alt="">
+                        <!-- trừ 50% -->
+                        <div class="discount-50-percent">-50%</div>
+                    </div>
+                    <div class="product-name">
+                        Áo Phông Nam Slim Fit Rib
+                    </div>
+                    <!-- bọc giá đã giảm và giá chưa giảm -->
+                    <div class="product-price">
+                        <!-- giảm -->
+                        <div class="discount-product-price">
+                            250.000 đ
+                        </div>
+                        <!-- chưa giảm -->
+                        <div class="origin-product-price">
+                            500.000 đ</div>
+                    </div>
+                    <div class="product-color">
+                        <div class="product-color1"></div>
+                        <div class="product-color2"></div>
+                        <div class="product-color3"></div>
+                        <div class="product-color4"></div>
+                    </div>
+                </div>
+                <div class="product-item sale">
+                    <!-- bọc ảnh giảm giá và số -50% -->
+                    <div class="img-tag">
+                        <img src="./images/ao-thun-nu-TSN7269-GHI (1).webp" alt="">
+                        <!-- trừ 50% -->
+                        <div class="discount-50-percent">-50%</div>
+                    </div>
+                    <div class="product-name">
+                        Áo Phông Nam Slim Fit Rib
+                    </div>
+                    <!-- bọc giá đã giảm và giá chưa giảm -->
+                    <div class="product-price">
+                        <!-- giảm -->
+                        <div class="discount-product-price">
+                            250.000 đ
+                        </div>
+                        <!-- chưa giảm -->
+                        <div class="origin-product-price">
+                            500.000 đ</div>
+                    </div>
+                    <div class="product-color">
+                        <div class="product-color1"></div>
+                        <div class="product-color2"></div>
+                        <div class="product-color3"></div>
+                        <div class="product-color4"></div>
+                    </div>
+                </div>
+                <div class="product-item sale">
+                    <!-- bọc ảnh giảm giá và số -50% -->
+                    <div class="img-tag">
+                        <img src="./images/ao-thun-nu-TSN7269-GHI (1).webp" alt="">
+                        <!-- trừ 50% -->
+                        <div class="discount-50-percent">-50%</div>
+                    </div>
+                    <div class="product-name">
+                        Áo Phông Nam Slim Fit Rib
+                    </div>
+                    <!-- bọc giá đã giảm và giá chưa giảm -->
+                    <div class="product-price">
+                        <!-- giảm -->
+                        <div class="discount-product-price">
+                            250.000 đ
+                        </div>
+                        <!-- chưa giảm -->
+                        <div class="origin-product-price">
+                            500.000 đ</div>
+                    </div>
+                    <div class="product-color">
+                        <div class="product-color1"></div>
+                        <div class="product-color2"></div>
+                        <div class="product-color3"></div>
+                        <div class="product-color4"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- đã xem gần đây -->
-        <div class="filter-product-container" style="padding-bottom: 32px;">
+        <div class="filter-product-container seen" style="padding-bottom: 32px;">
             <div class="filter-container">
             </div>
             <h2 style="font-size: 30px; text-align: left; margin-top: 30px;">Đã xem gần đây</h2>
@@ -1087,3 +1217,7 @@
 </body>
 
 </html>
+
+<!-- qua -->
+<!-- k qua,bảo vệ lại mất mấy trăm -->
+<!-- k bảo vệ(học tiếp react nma k có chứng chỉ) -->

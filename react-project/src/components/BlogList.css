@@ -1,0 +1,7 @@
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các item xuống hàng nếu không đủ chỗ */
+    justify-content: center;
+    /* Căn giữa các item */
+}

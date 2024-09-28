@@ -1,0 +1,63 @@
+/*  CHưa có */
+.blog-card {
+    border: 1px solid rgb(221, 221, 221);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    /* Góc bo tròn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+    background-color: #fff;
+    /* Màu nền trắng */
+    transition: transform 0.2s;
+    /* Hiệu ứng chuyển động khi hover */
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    /* Nâng thẻ lên khi hover */
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    /* Kích thước tiêu đề */
+    color: #333;
+    /* Màu chữ tối */
+    margin-bottom: 10px;
+    /* Khoảng cách phía dưới tiêu đề */
+}
+
+.blog-card p {
+    color: #666;
+    /* Màu chữ nhạt hơn cho nội dung */
+    line-height: 1.6;
+    /* Khoảng cách giữa các dòng */
+    margin-bottom: 10px;
+    /* Khoảng cách phía dưới nội dung */
+}
+
+.blog-card div {
+    margin-top: 10px;
+    /* Khoảng cách phía trên của các div */
+}
+
+.blog-card strong {
+    color: #333;
+    /* Màu chữ cho phần strong */
+}
+
+/* CSS cho dàn ngang */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các thẻ quay lại dòng mới nếu không đủ không gian */
+    justify-content: space-between;
+    /* Dàn đều khoảng cách giữa các thẻ */
+}
+
+.blog-card {
+    flex: 1 1 calc(30% - 20px);
+    /* Chiều rộng của mỗi thẻ */
+    max-width: calc(30% - 20px);
+    /* Đảm bảo không vượt quá chiều rộng này */
+}
